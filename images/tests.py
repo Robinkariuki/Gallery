@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Location,categories
+from .models import Location,categories,Image
 # Create your tests here.
 class LocationTestClass(TestCase):
     def setUp(self):

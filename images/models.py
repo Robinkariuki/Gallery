@@ -30,3 +30,31 @@ class categories(models.Model):
     @classmethod
     def delete_category(cls,category):
         cls.objects.filter(category=category).delete()
+
+
+
+class Image(models.Model):
+    title=models.CharField(max_length=60)
+    categories = models.ManyToManyField(categories)
+    location = models.ForeignKey(Location,on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='images/')
+    post_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+    def save_image(self):
+        self.save()
+
+
+    @classmethod
+    def all_images(cls):
+        images = cls.objects.all()
+        return images
+
+    @classmethod
+    def search_by_category(cls,search_term):
+        # images = cls.objects.filter(categories__icontains=search_term)
+        images = cls.objects.filter(Q(categories__category=search_term) | Q(title__icontains=search_term) | Q(location__location=search_term))
+
+        return images
