@@ -8,10 +8,39 @@ By: Robin kariuki
 This web-app allows the user to view teh admin's images while allowing the admin to add the images according with the following attributes: Location and Category.
 
 ## Setup/Installation Requirements
-* Live site can be accessed from the following link 
-* Pre-configured Admin details are:
-Password: hitman11
-Username: robink
+
+*   Fork the repository
+*   git clone the project to your local machine
+*   Set up a virtual environment in the project folder
+```
+python3.6 -m venv --without-pip virtual
+```
+
+### Prerequisites
+
+*get pip 
+
+```
+curl https://bootstrap.pypa.io/get-pip|python
+```
+
+*get all requirements in the requirements.txt file
+
+```
+pip install -r requirements.txt
+```
+
+### Installing
+
+Ensure that the MODE in the .env is set to development ('dev'), which will automatically set debug to true.
+
+Now run the following command
+
+```
+python3.6 manage.py runserver
+```
+
+And view the site at the port provided which is most likely 127.0.0.1:8000
 
 ### Known Bugs
 images are not properly arranged.
@@ -39,11 +68,9 @@ Then: User details are authenticated to confirm if user is an admin<br>
 
 
 ### Technologies Used
-* Vscode was the source code editor of choice.
-* Git and Github were used as my local and online repositories respectively.
-* Django was used as the framework of choice
-* Heroku was used in deploying the live site
-
+* Python3.6
+* Django Web Framework
+* Bootstrap4 
 
 ### Support and contact details
 * Contact me through my email: robinkariuki123@gmail.com
