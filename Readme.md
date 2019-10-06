@@ -1,7 +1,7 @@
 # Gallery
 
 This python/django web-app was created in order to display my images in a gallery format.
-Date: 2nd November 2019
+
 By: Robin kariuki
 
 ## Description
