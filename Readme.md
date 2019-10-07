@@ -76,6 +76,9 @@ Then: User details are authenticated to confirm if user is an admin<br>
 * Contact me through my email: robinkariuki123@gmail.com
 * The source code is also contained within the folder containing this ReadMe with comments on the code thus third-party support can be offered.
 
-### License
-Moringa School
-Copyright (c)2019 **Gallery by Yours Truly-Robin kariuki**
+## Licence
+ 
+ [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)](http://opensource.org/licenses/MIT)
+ 
+ 
+ Copyright (c) 2019 RobinKariuki
