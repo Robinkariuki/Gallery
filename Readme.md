@@ -8,7 +8,7 @@ By: Robin kariuki
 This web-app allows the user to view teh admin's images while allowing the admin to add the images according with the following attributes: Location and Category.
 
 ## Setup/Installation Requirements
-
+* Live site can be accessed from the following link https://naruto123.herokuapp.com/
 *   Fork the repository
 *   git clone the project to your local machine
 *   Set up a virtual environment in the project folder
